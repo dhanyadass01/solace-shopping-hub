@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: solace-shopping-hub-backend
+    env: node
+    plan: free
+    region: oregon
+    buildCommand: cd backend && npm ci
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        value: "change_me_in_render"
+
+  - type: static
+    name: solace-shopping-hub-frontend
+    plan: free
+    region: oregon
+    staticPublishPath: frontend/dist
+    buildCommand: cd frontend && npm ci && npm run build
+    envVars:
+      - key: VITE_API_URL
+        # update this to your backend public URL (e.g. https://solace-shopping-hub-backend.onrender.com/api)
+        value: ""
