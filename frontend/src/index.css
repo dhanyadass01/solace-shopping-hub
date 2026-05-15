@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply transition-colors duration-300;
+    background-color: #fcf9f4;
+    color: #1c1c19;
+  }
+  ::selection {
+    background-color: #ffdbd0;
+    color: #1c1c19;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #061b0e;
+    color: #fcf9f4;
+    font-weight: 600;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+  .btn-primary:active {
+    transform: scale(0.97);
+  }
+  .btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+  .btn-secondary {
+    background-color: #f0ede8;
+    color: #1c1c19;
+    font-weight: 600;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+    font-size: 0.75rem;
+  }
+  .btn-secondary:hover {
+    background-color: #e5e2dd;
+  }
+  .btn-secondary:active {
+    transform: scale(0.97);
+  }
+  .btn-danger {
+    background-color: #ba1a1a;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+    font-size: 0.75rem;
+  }
+  .btn-danger:hover {
+    opacity: 0.9;
+  }
+  .btn-danger:active {
+    transform: scale(0.97);
+  }
+  .input-field {
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border: 1px solid #c3c8c1;
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    outline: none;
+    transition: all 0.2s;
+    font-size: 0.875rem;
+  }
+  .input-field:focus {
+    border-color: #061b0e;
+    box-shadow: 0 0 0 2px rgba(6, 27, 14, 0.15);
+  }
+  .card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    border: 1px solid #f0ede8;
+    transition: all 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 4px 20px rgba(77, 100, 83, 0.08);
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .glass {
+    background-color: rgba(252, 249, 244, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(195, 200, 193, 0.3);
+  }
+}

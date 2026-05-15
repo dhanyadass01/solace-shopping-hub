@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "name": "Admin User",
+    "email": "admin@example.com",
+    "password": "admin123",
+    "phone": "+91 98765 43210",
+    "address": "123 Admin Street, Sector 5",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=admin",
+    "savedAddresses": [
+      {
+        "label": "Home",
+        "address": "123 Admin Street, Sector 5",
+        "city": "Mumbai",
+        "postalCode": "400001",
+        "country": "India"
+      }
+    ],
+    "role": "admin",
+    "wishlist": []
+  },
+  {
+    "id": 2,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "user123",
+    "phone": "+91 99887 76655",
+    "address": "45 Lake View Apartments, Koramangala",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john",
+    "savedAddresses": [
+      {
+        "label": "Home",
+        "address": "45 Lake View Apartments, Koramangala",
+        "city": "Bangalore",
+        "postalCode": "560034",
+        "country": "India"
+      },
+      {
+        "label": "Office",
+        "address": "12 Tech Park, Whitefield",
+        "city": "Bangalore",
+        "postalCode": "560066",
+        "country": "India"
+      }
+    ],
+    "role": "user",
+    "wishlist": []
+  },
+  {
+    "id": 3,
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "password": "user123",
+    "phone": "+91 88776 65544",
+    "address": "78 Green Enclave, Nungambakkam",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=jane",
+    "savedAddresses": [
+      {
+        "label": "Home",
+        "address": "78 Green Enclave, Nungambakkam",
+        "city": "Chennai",
+        "postalCode": "600034",
+        "country": "India"
+      }
+    ],
+    "role": "user",
+    "wishlist": []
+  },
+  {
+    "id": 4,
+    "name": "dhanya",
+    "email": "dhanyadass025@gmail.com",
+    "password": "123456",
+    "phone": "+91 77665 54433",
+    "address": "3 Kaveri street, PN palayam",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=dhanya",
+    "savedAddresses": [
+      {
+        "label": "Home",
+        "address": "3 Kaveri street, PN palayam",
+        "city": "Coimbatore",
+        "postalCode": "641037",
+        "country": "India"
+      }
+    ],
+    "role": "user",
+    "wishlist": [
+      "3"
+    ],
+    "cart": {
+      "items": [],
+      "coupon": null
+    }
+  }
+]
