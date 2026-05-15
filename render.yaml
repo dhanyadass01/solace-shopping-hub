@@ -20,5 +20,5 @@ services:
     buildCommand: cd frontend && npm ci && npm run build
     envVars:
       - key: VITE_API_URL
-        # update this to your backend public URL (e.g. https://solace-shopping-hub-backend.onrender.com/api)
-        value: ""
+        # backend public URL (frontend will call <VITE_API_URL>/products)
+        value: "https://solace-shopping-hub.onrender.com/api"
