@@ -127,4 +127,6 @@ e-commerce/
 │   ├── vite.config.js
 │   └── package.json
 └── README.md
+
+<!-- redeploy-trigger -->
 ```
